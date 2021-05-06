@@ -1,0 +1,67 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Calibri", sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.my-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Panel- image centered and expanded */
+.panel{
+    position: relative;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 90vw;
+    border-radius: 100px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    transition: flex 0.7s ease-in;
+}
+
+/* Text to show when active, hidden by default */
+.panel h3{
+    position: absolute;
+    font-size: 24px;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    opacity: 0;
+}
+
+/* When panel set to active by class addition */
+.panel.active{
+    flex: 6;
+}
+
+.panel.active h3{
+    /* 0.4s is a delay */
+    transition: opacity 0.3s ease-in 0.4s;
+    opacity: 1;
+}
+
+@media(max-width: 768px){
+    .panel{
+        background-size: auto 100vh;
+    }
+}
