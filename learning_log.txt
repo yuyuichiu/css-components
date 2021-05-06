@@ -1,0 +1,32 @@
+6/5/2021 - Progress step component
+** CSS **
+> ::before & ::after
+---- as if adding HTML block above/below current element
+---- but only does visual appearance, avoid confusing html codes
+---- Show its content by "content: '';"
+> align-items vs. justify-content
+---- align item controls the minor axis, the up and down
+---- justify-content controls the major axis, the left and right
+> CSS variables
+---- :root{ --varName: value; }
+---- var name always starts with "--" & stored inside :root{} at top
+> Button click effect
+---- scale(0.97) [not too stylish, and clear on the 'clicked' message]
+---- set "outline: 0" in :focus for best visuals
+
+> "flex: 1" will disrupt text alignment
+
+5/5/2021 - Expanding Cards
+** CSS Background **
+> background-position: center 
+---- keep picture to center of container
+> background-size: x, y 
+---- control background img
+
+** Javascript **
+> querySelector("myclass")
+----to select classes similar to getElementsByClassName();
+After selected element, we can edit its class by
+> classList.add() | .remove()
+----edit what class get attached to elements
+(Seems like javascript cannot modify class content directly)
