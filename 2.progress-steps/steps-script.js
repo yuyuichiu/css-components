@@ -3,7 +3,7 @@ const nextBtn = document.getElementById("next");
 const progressBar = document.getElementById("progress");
 const circles = document.querySelectorAll(".progress-steps");
 /* Adjust this based on default active count */
-var current = 2;
+var current = document.querySelectorAll(".progress-steps.active").length;
 
 prevBtn.addEventListener('click',() => {
     current--;
