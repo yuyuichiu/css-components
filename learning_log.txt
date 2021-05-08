@@ -1,3 +1,25 @@
+7/5/2021 - Rotating Nav Menu
+** CSS **
+> Dynamic CSS trick
+---- if there is an active class that is added by javascript, we can modify other behavior on css instead of in js one by one
+---- ".container.active ~ .target" to toggle two states
+---- "+" means next siblings && "~" means general siblings
+(siblings means two elements are on the same level.)
+<< it auto focuses on adjusted items so it fixes some scrolling issues too >>
+
+> A semi-circle on corner of screen
+---- Put a circle in a container, and container set to fixed position with -100px on top and left
+---- The circle will be partly hidden, making an illusion of a quarter circle.
+> Customizing button -- clear out default button properties
+---- 1. background: transparent;
+---- 2. border: none;
+---- 3. button:focus { outline: none; }
+> Responsive margin
+---- Combine "margin" & "max-width" to ensure minimum margin, without weird display on wide screens.
+(Content need to put on separate div for this to work, cannot do this directly to body)
+
+
+
 6/5/2021 - Progress step component
 ** CSS **
 > ::before & ::after
@@ -11,10 +33,13 @@
 ---- :root{ --varName: value; }
 ---- var name always starts with "--" & stored inside :root{} at top
 > Button click effect
----- scale(0.97) [not too stylish, and clear on the 'clicked' message]
+---- scale(0.97) [not too stylish, and express the 'clicked' message]
 ---- set "outline: 0" in :focus for best visuals
-
 > "flex: 1" will disrupt text alignment
+
+** Javascript **
+> Turn on disabled by "element.disabled = true/false"
+
 
 5/5/2021 - Expanding Cards
 ** CSS Background **

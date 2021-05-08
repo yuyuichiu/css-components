@@ -1,0 +1,131 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", "Calibri", sans-serif;
+    overflow-x: hidden;
+    background-color: #333;
+    color: #222;
+    margin: 0;
+}
+
+/* Rotation & Filler content in container */
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+
+/* The Navigation Circle */
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle{
+    position: fixed;
+    background-color: #70a8e9;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    /* transform: rotate(-90deg); */
+    transition: transform 0.5s linear;
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    color: white;
+    cursor: pointer;
+
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    z-index: 20;
+}
+
+.container.show-nav ~ .circle-container .circle{
+    /* Disk menu spins when rotation is activated */
+    transform: rotate(-90deg);
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+#open{
+    position: relative;
+    left: 60%;
+}
+
+#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+/* Navigation Menu properties */
+nav{
+    /* set a fixed position for menu */
+    position: fixed;
+    bottom: 40px;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    text-transform: uppercase;
+    color: white;
+    margin: 30px 0;
+    /* To hide initially */
+    transform: translateX(-200%);
+    transition: transform 0.3s ease;
+}
+
+.container.show-nav ~ nav li{
+    /* To show when menu is opened */
+    transform: translateX(0);
+    transition-delay: 0.5s;
+}
+
+nav li i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav li:nth-of-type(2){
+    position: relative;
+    left: 20px;
+}
+
+nav li:nth-of-type(3){
+    position: relative;
+    left: 40px;
+}
+
+/* Filler content adjustments */
+.content{
+    margin: auto 50px;
+    max-width: 1000px;
+}
+
+#pic{
+    height: 300px;
+}
