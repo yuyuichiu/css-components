@@ -1,3 +1,17 @@
+
+
+
+9/5/2021 - Search Widget
+** Concept **
+> To create two-side expand effect, just expand both item. (one by width, another by transform: translate(_); )
+** Javascript **
+> classList.toggle()
+---- easier way to add & remove a class like an on/off button
+> myInput.focus()
+---- to focus on the input, enable immediate typing.
+
+
+
 7/5/2021 - Rotating Nav Menu
 ** CSS **
 > Dynamic CSS trick
@@ -39,6 +53,7 @@
 
 ** Javascript **
 > Turn on disabled by "element.disabled = true/false"
+
 
 
 5/5/2021 - Expanding Cards

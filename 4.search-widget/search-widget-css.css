@@ -1,0 +1,50 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Calibri", sans-serif;
+    background: linear-gradient(to left bottom, #fa94d9, #e2a2ee, #c8affa, #afbbff, #9dc4fc, #8fccfe, #85d3fd, #7edafa, #6ae4fc, #59eefa, #51f7f3, #58ffe7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.input{
+    position: relative;
+    border: 0;
+    background: #fffefb;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    transition: width 0.3s ease;
+}
+
+.input.active{
+    width: 200px;
+}
+
+.btn{
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 0;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.input.active ~ .btn{
+    transform: translateX(125px);
+    border: 0;
+}
