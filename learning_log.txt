@@ -1,4 +1,20 @@
+10/5/2021 - Blur Loading Page Transition
+** Javascript **
+> Map range of values to another range of values
+---- It concept means we can make any value of (0 to 100) into its equivalent value if it is in another range of(1, 0)
+---- So 55 in (0,100) will be converted to 0.45 on (1,0)
+---- Js does not have built in function for this, so use this one:
+```
+function scale (number, inMin, inMax, outMin, outMax) {
+    return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+}
+``` (src = https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers)
+> Change website title
+---- document.title = "New Title yay"
 
+** CSS **
+> filter: blur(10px)
+---- Apply visual effect to pictures, see details on MDN
 
 
 9/5/2021 - Search Widget

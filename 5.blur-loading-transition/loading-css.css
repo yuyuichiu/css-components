@@ -1,0 +1,33 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", "Calibri", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.page-pic{
+    position: absolute;
+    /* Includes adjustments to hide blur edges */
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    top: -30px;
+    left: -30px;
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-txt{
+    font-size: 50px;
+    color: #fff;
+}
