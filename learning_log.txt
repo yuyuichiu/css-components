@@ -1,3 +1,16 @@
+11/5/2021 - Scroll Animation
+** CSS **
+> nth-child(odd / even)
+---- to select odd or even indexed element with that class on it.
+** Javascript **
+Concept: Scroll position detection
+> It requires 2 information
+a) The trigger point (fixed)
+b) position returned from getBoundingClientRect() (dynamic)
+---- Both are numeric, so we just need to compare them on scroll event listener
+---- When dynamic < fixed, the element is on screen/criteria.
+---- Thus we can add/remove classes to instill scroll-pos-triggered effects
+
 10/5/2021 - Blur Loading Page Transition
 ** Javascript **
 > Map range of values to another range of values
