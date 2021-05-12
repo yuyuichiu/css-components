@@ -1,0 +1,130 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --left-bg: url('orangelemon.jpg');
+    --right-bg: url('grapes.jpg');
+    --left-overlay-color: rgb(241, 189, 14);
+    --right-overlay-color: rgb(140, 51, 158);
+    --left-txt-color: rgb(205, 255, 25);
+    --right-txt-color: rgb(95, 231, 77);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Calibri", sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.split{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 50px;
+    transition: flex 0.4s ease;
+}
+
+.left{
+    background: var(--left-bg);
+    background-position: center;
+    background-size: auto 100vh;
+    color: var(--left-txt-color);
+    text-shadow: -2px 4px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    flex: 1;
+}
+
+.right{
+    background: var(--right-bg);
+    background-position: center;
+    background-size: auto 100vh;
+    color: var(--right-txt-color);
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+    flex: 1;
+}
+
+.left:hover, .right:hover{
+    flex: 2;
+}
+
+.split h2{
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.buy-btn{
+    margin: 30px;
+    padding: 15px 40px;
+    border: 3px solid rgba(254, 255, 206, 0.8);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.4s ease;
+    z-index: 10;
+}
+
+.buy-btn:hover{
+    box-shadow: 0px 0px 10px white;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.buy-btn:active{
+    transform: scale(0.95);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: #eee;
+}
+
+.overlay-left{
+    background: var(--left-overlay-color);
+}
+
+.overlay-right{
+    background: var(--right-overlay-color);
+}
+
+@media(max-width: 700px){
+    .container{
+        display: block;
+        height: 100vh;
+    }
+
+    .split{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 50vh;
+        font-size: 50px;
+    }
+
+    .left,.right{
+        background-size: 100vw 50vh;
+    }
+}
