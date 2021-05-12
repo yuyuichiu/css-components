@@ -1,0 +1,115 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+:root{
+    --bg-color: rgb(100, 172, 255);
+    --form-bg-color: rgb(59, 113, 170);
+    --form-txt-color: white;
+    --form-focus-color: rgb(151, 229, 255);
+    --form-txt-link-color: lightblue;
+    --login-btn-bg-color: rgb(182, 232, 255);
+    --login-btn-txt-color: rgb(22, 95, 190);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Quicksand", "Calibri", sans-serif;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    background: var(--form-bg-color);
+    color: var(--form-txt-color);
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.container > h1{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 36px;
+}
+
+.container form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-control{
+    position: relative;
+    padding: 20px 0px;
+}
+
+.form-control input{
+    /* The underline input effect */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
+
+    display: block;
+    color: var(--form-txt-color);
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.form-control label{
+    position: absolute;
+    top: 35px;
+}
+
+.form-control input:focus{
+    border-bottom-color: var(--form-focus-color);
+}
+
+.form-control label span{
+    display: inline-block;
+    transition: transform 0.35s cubic-bezier(.34,-0.46,.69,1.48);
+    /* Cubic-bezier defines an animation curve, with 4 points to modify */
+    /* In this case, the animation will looks like a bounce */
+}
+
+/* Move individual letters up when active, span will be added by js */
+.form-control input:focus + label span{
+    color: var(--form-focus-color);
+    transform: translateY(-30px);
+}
+
+.login-btn{
+    background: var(--login-btn-bg-color);
+    border: 0;
+    color: var(--login-btn-txt-color);
+    padding: 12px 0;
+    margin: 15px 0 15px;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.login-btn:active{
+    transform: scale(0.97);
+}
+
+.form-txt a{
+    text-decoration: none;
+    color: var(--form-txt-link-color);
+}

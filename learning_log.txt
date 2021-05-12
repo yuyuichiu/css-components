@@ -1,4 +1,35 @@
-11/5/2021 - Scroll Animation
+
+
+
+
+<8> 13/5/2021 - Login form with wave Animation
+** CSS **
+> cubic-bezier
+---- An argument in transition, to make animation curve to specify behavior
+---- Transition works by moving an object from 1 property to another (silimar to moving location)
+---- How it arrive one location is key of animation
+---- So, cubic-bezier tells CSS how to move the object as animation
+---- cubic-bezier(p0, p1, p2, p3);
+(To modify it easier, go to: https://cubic-bezier.com/)
+
+> Input with transparent Background and a line below it
+---- clear border & bg, then add 'border-bottom' for the underline
+---- To make it change on active, modify it by 'border-bottom-color'
+
+> Form
+---- use container to store a form, instead of using form directly as the body
+---- handle label by setting it to position:absolute;
+
+
+
+<7> 12/5/2021 - Split Landing Page
+** CSS **
+> Revised how to use flex for dynamic scaling
+> :hover == mouseenter & mouseleave in js
+
+
+
+<6> 11/5/2021 - Scroll Animation
 ** CSS **
 > nth-child(odd / even)
 ---- to select odd or even indexed element with that class on it.
@@ -11,7 +42,9 @@ b) position returned from getBoundingClientRect() (dynamic)
 ---- When dynamic < fixed, the element is on screen/criteria.
 ---- Thus we can add/remove classes to instill scroll-pos-triggered effects
 
-10/5/2021 - Blur Loading Page Transition
+
+
+<5> 10/5/2021 - Blur Loading Page Transition
 ** Javascript **
 > Map range of values to another range of values
 ---- It concept means we can make any value of (0 to 100) into its equivalent value if it is in another range of(1, 0)
@@ -30,7 +63,8 @@ function scale (number, inMin, inMax, outMin, outMax) {
 ---- Apply visual effect to pictures, see details on MDN
 
 
-9/5/2021 - Search Widget
+
+<4> 9/5/2021 - Search Widget
 ** Concept **
 > To create two-side expand effect, just expand both item. (one by width, another by transform: translate(_); )
 ** Javascript **
@@ -41,7 +75,7 @@ function scale (number, inMin, inMax, outMin, outMax) {
 
 
 
-7/5/2021 - Rotating Nav Menu
+<3> 7/5/2021 - Rotating Nav Menu
 ** CSS **
 > Dynamic CSS trick
 ---- if there is an active class that is added by javascript, we can modify other behavior on css instead of in js one by one
@@ -63,7 +97,7 @@ function scale (number, inMin, inMax, outMin, outMax) {
 
 
 
-6/5/2021 - Progress step component
+<2> 6/5/2021 - Progress step component
 ** CSS **
 > ::before & ::after
 ---- as if adding HTML block above/below current element
@@ -85,7 +119,7 @@ function scale (number, inMin, inMax, outMin, outMax) {
 
 
 
-5/5/2021 - Expanding Cards
+<1> 5/5/2021 - Expanding Cards
 ** CSS Background **
 > background-position: center 
 ---- keep picture to center of container
