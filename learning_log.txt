@@ -16,9 +16,13 @@
 ---- clear border & bg, then add 'border-bottom' for the underline
 ---- To make it change on active, modify it by 'border-bottom-color'
 
+> Pointer event
+---- pointer-event: none; => to make object only visible, but not clickable
+
 > Form
 ---- use container to store a form, instead of using form directly as the body
 ---- handle label by setting it to position:absolute;
+---- :valid to identify when valid input is inserted
 
 
 

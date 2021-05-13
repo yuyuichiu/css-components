@@ -66,7 +66,7 @@ body{
     padding: 15px 0;
     width: 100%;
     font-size: 18px;
-    z-index: 2;
+    font-family: "Quicksand";
 }
 
 .form-control input:focus{
@@ -76,6 +76,7 @@ body{
 .form-control label{
     position: absolute;
     top: 35px;
+    pointer-events: none;
 }
 
 .form-control input:focus{
@@ -90,7 +91,8 @@ body{
 }
 
 /* Move individual letters up when active, span will be added by js */
-.form-control input:focus + label span{
+.form-control input:focus + label span,
+.form-control input:valid + label span{
     color: var(--form-focus-color);
     transform: translateY(-30px);
 }
@@ -103,6 +105,7 @@ body{
     margin: 15px 0 15px;
     font-size: 16px;
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 
 .login-btn:active{
