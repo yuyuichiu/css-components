@@ -1,5 +1,9 @@
-
-
+<9> 14/5/2021 - Play with HTML Audio Tag
+** HTML Audio Tag **
+> <audio>
+---- does nothing by itself without 'controls' attribute
+---- but we can turn it into button and play it with javascript (by _.play())
+---- Note that sounds will overlap each other, so cancel sounds by "_.pause()" and "_.currentTime = 0"
 
 
 <8> 13/5/2021 - Login form with wave Animation
