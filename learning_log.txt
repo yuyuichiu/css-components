@@ -1,3 +1,15 @@
+<10> 15/5/2021 - Dad joke API
+** Fetch API **
+API is a service where the host gives you data based on what you requested
+Collect data by using fetch():
+> fetch('url' , config).then( ).then( )
+---- config => { headers: { 'Accept': 'application/json' } }
+---- 1. then(response => response.json() )
+---- 2. then(data => { console.log(data) } )
+(Data is an object that you can assess with data.key)
+
+
+
 <9> 14/5/2021 - Play with HTML Audio Tag
 ** HTML Audio Tag **
 > <audio>
