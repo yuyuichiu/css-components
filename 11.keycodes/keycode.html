@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keycode Getter</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="keycode.css">
+</head>
+<body>
+    <div class="insert">
+        <div class="key">
+            <p>event.keyCode</p>
+            <div class="result" id="keyCode">50</div>
+        </div>
+        
+        <div class="key">
+            <p>event.key</p>
+            <div class="result" id="key">@</div>
+        </div>
+
+        <div class="key">
+            <p>event.code</p>
+            <div class="result" id="code">Digit2</div>
+        </div>
+    </div>
+    <p>Press any key for its keyboard code</p>
+    <br>
+    <aside>
+        <p>event.keyCode is outdated, it is recommended to use event.key instead (advice from MDN)</p>
+    </aside>
+
+    <script src="keycode.js"></script>
+</body>
+</html>
