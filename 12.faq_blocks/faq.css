@@ -1,0 +1,114 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", "Calibri", sans-serif;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ::selection{
+    background-color: rgb(204, 204, 204);
+}
+
+.container h1{
+    margin: 20px 0 5px 0;
+}
+
+.faq{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    min-width: 300px;
+    background: #fff;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px rgb(0,0,0,0.2), -3px 0px 5px rgb(0,0,0,0.2);
+    transition: height 0.4s ease;
+}
+
+.faq.active::before,
+.faq.active::after{
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 4em;
+    position: absolute;
+    color: rgb(181, 255, 96);
+    bottom: 0;
+    right: 5px;
+    opacity: 0.28;
+    pointer-events: none;
+}
+
+.faq.active::before{
+    transform: rotateY(180deg);
+}
+
+.faq.active::after{
+    color: rgb(150, 148, 255);
+    font-size: 3em;
+    bottom: 25px;
+    right: 50px;
+}
+
+.faq-title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.faq-title:hover{
+    color:rgb(117, 117, 117);
+}
+
+.faq.active .faq-title{
+    margin-bottom: 20px;
+    transition: margin 0.55s ease;
+}
+
+.faq-answer{
+    text-align: justify;
+    letter-spacing: 1px;
+
+    height: 0;
+    overflow: hidden;
+}
+
+.faq.active .faq-answer{
+    height: auto;
+}
+
+.faq-expand{
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    background: inherit;
+    top: 18px;
+    right: 16px;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.faq.active .faq-expand{
+    transform: rotateZ(45deg);
+    color: rgb(104, 104, 104);
+}

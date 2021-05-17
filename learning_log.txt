@@ -1,7 +1,26 @@
+<12> 17/5/2021 - FAQ Collapsibles
+** CSS **
+> transition for "height: auto"
+---- CSS transition does not allow us to animate from height 0px to auto
+---- Thus, we can add transition for its margin to make it looks like moving
+(adjusting max-height does not work, and scaleY ignores document flow)
+> shapes in CSS
+---- use ::before and ::after to insert shapes in elements
+---- content accepts unicode like "\f007" (can be found on fontawesome.com)
+---- Font Awesome icon can be included by "font-family: 'Font Awesome 5 Free';"
+(Font Awesome Icon sometimes need to be at font-weight: 900 to work.)
+
+*** Javascript **
+> parentNode
+---- To assess the parent of element.
+
+
+
 <11> 16/5/2021 - Keyboard input getter
 ** CSS **
-> ::select
+> ::selection
 ---- control text select stylings
+---- limit range by .container ::selection {...}
 
 ** Javascript **
 > get keyboard input with .addEventListener('keydown', function(e) {...} )
