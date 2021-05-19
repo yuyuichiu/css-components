@@ -1,3 +1,11 @@
+<14> 19/5/2021 - Animated Navigation
+** CSS **
+> shape with lines
+---- create a rotatable X shape with two literal lines, instead of "X"
+---- then add rotation effect to make it turn from one shape into another
+
+
+
 <13> 18/5/2021 - Random Choice Selector
 ** Javascript **
 > add elements
