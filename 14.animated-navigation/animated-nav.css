@@ -59,7 +59,7 @@ nav.active ul li:hover{
     text-underline-offset: 2px;
 }
 
-nav.active ul li a{
+nav ul li a{
     text-decoration: none;
     color: #000;
 }
