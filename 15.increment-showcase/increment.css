@@ -1,0 +1,66 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(249, 255, 170);
+    color: #222;
+    font-family: "Roboto Mono", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fa-youtube{ color: red; }
+.fa-twitter{ color: lightskyblue; }
+.fa-instagram{ color: rgb(255, 0, 179); }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.container ::selection{
+    background: rgb(237, 255, 138);
+}
+
+.counter{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+
+.counter .fab{
+    font-size: 60px;
+}
+
+.count-amt{
+    font-size: 45px;
+}
+
+.tutorial{
+    font-size: 14px;
+}
+
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+
+    .tutorial{
+        display: none;
+    }
+}
