@@ -1,3 +1,17 @@
+<16> 21/5/2021 - Drink Water
+** CSS **
+> make height go up
+---- Can be achieved through flexbox property!
+---- "justify-content: flex-start" (or flex-end) to make child element lays on top/bottom of parent
+---- Now, changing the height will expand the element by your 
+
+> Cup shape through border-radius
+---- border radius is not limited to one side, 4 points can be specified
+---- Order goes clockwise, starts from top-left.
+
+** Javascript **
+---- you cannot use .map() on querySelectorAll arrays.
+
 <15> 20/5/2021 - Increment Showcase
 ** Javascript **
 HTML has attribute: data-target
