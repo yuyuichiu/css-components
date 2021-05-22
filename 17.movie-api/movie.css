@@ -1,0 +1,113 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-color: rgb(59, 73, 134);
+    --secondary-color: rgb(106, 130, 240);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary-color);
+    background-repeat: no-repeat;
+    font-family: "Oswald", "Calibri", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: var(--secondary-color);
+    height: 60px;
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+}
+
+.search{
+    background: transparent;
+    font-family: inherit;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.search::placeholder{
+    color: #eee;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main ::selection{
+    background: rgb(126, 255, 234);
+}
+
+.movie{
+    position: relative;
+    width: 275px;
+    height: 400px;
+    background: var(--secondary-color);
+    margin: 16px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.movie img{
+    width: 275px;
+    height: 340px;
+    border-radius: 5px 5px 0 0;
+}
+
+.movie .title{
+    height: 60px;
+    margin: 5px 43px 5px 5px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.movie .rating{
+    position: absolute;
+    top: 90%;
+    right: 5px;
+    background:rgb(48, 70, 172);
+    border-radius: 5px;
+    padding: 3px 8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.movie .overview{
+    /* Located at bottom due to justify-content: flex-end */
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    opacity: 0.8;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease;
+}
+
+.movie:hover .overview{
+    height: 320px;
+}
+
+.overview p, .overview h3{
+    margin: 5px;
+}
+
+@media (max-width: 768px){
+    main{
+       justify-content: center;
+    }
+}
