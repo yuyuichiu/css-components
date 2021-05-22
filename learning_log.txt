@@ -1,3 +1,27 @@
+<17> 22/5/2021 - Movie App
+** CSS **
+> ::placeholder
+---- to amend input placeholder display
+> flex-wrap
+---- to decide whether the flex boxes go to next line when not enough space
+> styling practices
+---- use primary and secondary color as variable
+> flex-end usage
+---- use it on header to put search bar to the right, remember padding.
+
+** Javascript **
+> DOM manipulation: add attribute
+---- .setAttribute(attr,value);
+(Note: if need to add big chunk of components, use innerHTML to change the whole thing instead)
+
+** API **
+---- learn to read from the getting started page of API documents.
+
+++ Future to-do:
+---- Improve the movie app: sort function, location, explore more api methods
+
+
+
 <16> 21/5/2021 - Drink Water
 ** CSS **
 > make height go up
