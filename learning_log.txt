@@ -18,8 +18,8 @@
 ---- learn to read from the getting started page of API documents.
 
 ++ Future to-do:
----- Improve the movie app: sort function, location, explore more api methods
-
+// Improve the movie app: sort function, location, explore more api methods
+// Search by enter instead
 
 
 <16> 21/5/2021 - Drink Water

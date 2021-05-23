@@ -10,7 +10,7 @@ async function getPopularMovies(key){
     main.innerHTML = "";
 
     // Attributes: title, vote_average (rating), overview, poster_path
-    await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&sort_by=revenue.desc`)
+    await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate&include_adult=false&sort_by=popularity.desc`)
         .then(data => data.json())
         .then((info) => {
             info.results.forEach((movie) => {
