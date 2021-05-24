@@ -1,3 +1,24 @@
+<18> 24/5/2021 - Gallery Slider
+** CSS **
+> Make Image size to cover screen
+---- "background-image: cover;"
+> Make Image center
+---- "background-position: center center"
+
+** Javascript **
+> document.body ==> Get HTML body
+
+> class with Multiple words are styled as follow:
+---- backgroundImage (camelCasing)
+
+!! Swipe Technique
+---- Use "touchstart", "touchmove" & "touchend" EVENTs
+---- AND extract position information with " e.touches[0].screenX; "
+(The [0] in touches is a touch object, which includes pointer location data)
+(screenX = x-axis && screenY = y-axis)
+
+
+
 <17> 22/5/2021 - Movie App
 ** CSS **
 > ::placeholder
