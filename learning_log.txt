@@ -1,3 +1,20 @@
+<19> 25/5/2021 - Stylized Clock
+** CSS **
+> Variable Scoping
+---- variable can be scoped by playing with html classList
+---- set variable adjustment to "html.yourClass", then toggle that class in JS
+---- (HTML is referenced by "document.querySelector(html)") <NOT document.html>
+
+** Javascript **
+> 360 rotation transition
+---- record the accumulated 360 degree with a global variable
+> Time method
+---- paired with setInterval to update every second
+< Updating Align with realtime clock second >
+---- put Interval in a while true loop, break and execute when second has changed
+
+
+
 <18> 24/5/2021 - Gallery Slider
 ** CSS **
 > Make Image size to cover screen

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Clock</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="clock.css">
+</head>
+<body>
+    <!-- Dark Mode btn -->
+    <button class="toggle">Light / Dark Mode</button>
+
+    <!-- Clock container for the clock, with the needles & center pt in place -->
+    <!-- Remember to add time & date as text string -->
+    <div class="clock-container">
+        <div class="needle hour"></div>
+        <div class="needle minute"></div>
+        <div class="needle second"></div>
+        <div class="center-point"></div>
+    </div>
+
+    <div class="time"></div>
+    <div class="date"></div>
+
+    <script src="clock.js"></script>
+</body>
+</html>

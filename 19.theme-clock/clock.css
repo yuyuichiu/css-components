@@ -1,0 +1,109 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Heebo');
+
+/* Variable Scoping for light and dark mode */
+:root{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+html.dark{
+    --primary-color: #333;
+    --secondary-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Heebo", "Calibri", sans-serif;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+}
+
+.toggle{
+    position: absolute;
+    top: 10%;
+    margin: 30px;
+    padding: 6px 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Needles will be moved by transform: rotate() */
+.clock-container{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.needle{
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: var(--secondary-color);
+    transform-origin: bottom;
+    transition: transform 1s linear, background-color 0.2s ease;
+}
+
+.needle.hour{
+    height: 50px;
+    transform: translate(0,-50%) rotate(40deg);
+    z-index: 1;
+}
+
+.needle.minute{
+    height: 85px;
+    transform: translate(0,-50%) rotate(80deg);
+    z-index: 2;
+}
+
+.needle.second{
+    transform: translate(0,-50%) rotate(0deg);
+    background-color: red;
+    z-index: 3;
+}
+
+.center-point{
+    width: 10px;
+    height: 10px;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    z-index: 4;
+    transition: background-color 0.2s ease;
+}
+
+.time{
+    position: relative;
+    color: var(--secondary-color);
+    top: 20px;
+    padding: 10px;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.date{
+    position: relative;
+    color: var(--secondary-color);
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
