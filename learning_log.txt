@@ -1,3 +1,22 @@
+<20> 26/5/2021 - Ripple effect
+** CSS **
+> Animation
+---- animation is different from transition.
+---- Animation goes to target and revert to its original state when finish
+---- Transition add effect when object is modified
+---- We can add an animation name to animation property
+(animation: myAnimation 0.2s ease)
+---- Then edit keyframes by @keyframe name
+(@keyframe myAnimation{
+    from{ ... }
+    to { ... }
+}) << 0% ~ 100% also works >>
+
+** Javascript **
+> getBoundingClientRect.x/y to extract object top-left edge's XY location
+> pointer location by e.clientX/Y
+
+
 <19> 25/5/2021 - Stylized Clock
 ** CSS **
 > Variable Scoping
@@ -8,6 +27,8 @@
 ** Javascript **
 > 360 rotation transition
 ---- record the accumulated 360 degree with a global variable
+> Style 0 in front
+---- while(length < X){ "0" + str }
 > Time method
 ---- paired with setInterval to update every second
 < Updating Align with realtime clock second >
