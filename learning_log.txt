@@ -15,6 +15,10 @@
 ** Javascript **
 > getBoundingClientRect.x/y to extract object top-left edge's XY location
 > pointer location by e.clientX/Y
+> createElement : document.createElement('div')
+---- to edit it, use classList, innerText and style
+---- on completion, appendChild this element to desired parent location
+> delete Element : .remove();
 
 
 <19> 25/5/2021 - Stylized Clock
