@@ -1,3 +1,12 @@
+<21> 27/5/2021 - Drag and Drop
+** HTML **
+> Enable drag and drop by => draggable="true"
+
+** Javascript **
+> append remove original element and place it to new location
+> querySelector: ":not(target)" pseudoclass to exclude something from all collected elements
+> reduce() initial value can be an object.
+
 <20> 26/5/2021 - Ripple effect
 ** CSS **
 > Animation

@@ -1,0 +1,53 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightskyblue;
+    font-family: "Roboto", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    margin: 10px;
+    width: 106px;
+    height: 106px;
+    border: 3px solid #000;
+}
+
+.hovered{
+    background: rgba(59, 59, 59, 0.5);
+    border: 3px dashed #fff;
+}
+
+.fill{
+    background-image: url('https://source.unsplash.com/random/100x100');
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.hold{
+    border: 3px solid gray;
+}
+
+@media(max-width: 800px){
+    .box-container{
+        flex-direction: column;
+    }
+}
