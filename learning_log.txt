@@ -1,3 +1,29 @@
+<22> 28/5/2021 - CContext('2d')"anvas Drawing App
+** Javascript **
+> To start using canvas, extract its context in a variable by:
+---- "const canvas = getElementById('canvas');"
+---- "const ctx = canvas.getContext('2d');"
+
+> Canvas only supports 2 primitive shapes: Rectangle and Paths
+---- but we can work around to create various shapes
+1) fillRect( x , y , width, height)
+<< clearRect to clear out certain area, stroke Rect to create an outline rect>>
+2) Path:
+a. beginPath
+b. moveTo
+c. lineTo
+d. stroke (or fill)
+e. closePath
+
+> circle
+---- ctx.arc(x,y,size,Math.PI * 2, 0, true);
+
+> Canvas property
+---- COLOR: ctx.fillColor & .strokeColor
+---- SIZE: ctx.lineWidth
+---- LINE END BEHAVIOR: ctx.lineCap
+
+
 <21> 27/5/2021 - Drag and Drop
 ** HTML **
 > Enable drag and drop by => draggable="true"
