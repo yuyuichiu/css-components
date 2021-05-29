@@ -1,3 +1,10 @@
+<23> 29/5/2021 - Two triangles hitting each other (loading animation)
+** CSS **
+> triangles
+---- created by making a element have 0 size, then visualize its border while set transparent color to the other 3 unwanted sides
+
+
+
 <22> 28/5/2021 - CContext('2d')"anvas Drawing App
 ** Javascript **
 > To start using canvas, extract its context in a variable by:
@@ -32,6 +39,7 @@ e. closePath
 > append remove original element and place it to new location
 > querySelector: ":not(target)" pseudoclass to exclude something from all collected elements
 > reduce() initial value can be an object.
+> container.insertBefore('toAdd','location');
 
 <20> 26/5/2021 - Ripple effect
 ** CSS **
