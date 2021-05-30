@@ -1,0 +1,116 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+    font-family: "Open Sans", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card{
+    width: 250px;
+    height: 320px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3), -2px -2px 5px rgba(0,0,0,0.3);
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.card-image{
+    width: 250px;
+    height: 125px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card-image > img{
+    width: 250px;
+}
+
+.card > .card-content{
+    padding: 10px 20px;
+    line-height: 1.2em;
+}
+
+.card-content > .title{
+    margin: 15px 0;
+}
+
+.card-content > .description{
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.icon{
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon > img{
+    width: 50px;
+    height: 50px;
+}
+
+.author{
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.animated-bg{
+    /* A bar with a tiny vertical "layer" represented as loading */
+    background-image: linear-gradient(
+        to right,
+        #f6f7f8 0%,
+        #edeef1 10%,
+        #f6f7f8 20%,
+        #f6f7f8 100%
+    );
+    /* Make that bar wider */
+    background-size: 200% 100%;
+    /* Animate the loading effect by playing with background position */
+    animation: bgPos 0.75s linear infinite;
+}
+
+.animated-bg-text{
+    /* The loading bars */
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.author, .date{
+    width: 150px;
+    font-size: 14px;
+}
+
+@keyframes bgPos{
+    0%{
+        background-position: 75% 0;
+    }
+    100%{
+        background-position: -100% 0;
+    }
+}

@@ -1,3 +1,12 @@
+<24> 30/5/2021 - Card component with loading animation
+** CSS **
+> Loading Animation
+---- How it works? => A gradient bar with a tiny vertical layer
+---- then set that bar to 200% of width and animate its background position
+---- If the element is a text, we need to additionally set a bg-animate-text class for it to have actual length
+
+
+
 <23> 29/5/2021 - Two triangles hitting each other (loading animation)
 ** CSS **
 > triangles
@@ -5,7 +14,7 @@
 
 
 
-<22> 28/5/2021 - CContext('2d')"anvas Drawing App
+<22> 28/5/2021 - Canvas Drawing App
 ** Javascript **
 > To start using canvas, extract its context in a variable by:
 ---- "const canvas = getElementById('canvas');"
