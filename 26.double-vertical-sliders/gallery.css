@@ -9,10 +9,91 @@
 
 body{
     font-family: "Roboto", "Calibri", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+.left{
+    position: relative;
+    height: 100vh;
+    background-color: aquamarine;
+    flex: 2;
+    transition: transform 0.8s ease-in-out;
+    transform: translate(0,-300vh);
+}
+
+.slider{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-size: 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    z-index: 10;
+}
+
+.slider:active{
+    background-color: #ddd;
+}
+
+#up{
+    left: 40%;
+    top: calc(50% - 25px);
+    transform: translate(0, -50%);
+}
+
+#down{
+    left: calc(40% - 50px);
+    top: calc(50% + 25px);
+    transform: translate(0, -50%);
+}
+
+.gallery{
+    height: 100vh;
+    background-color: #eee;
+    flex: 3;
+    transition: transform 0.8s ease-in-out;
+    transform: translate(0,0vh);
+}
+
+.description{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    font-size: 30px;
 }
+
+.description > h1{
+    font-size: 42px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.description > small{
+    font-size: 14px;
+}
+
+.d1{ background-color: pink; color: rgb(129, 81, 81); }
+.d2{ background-color: rgb(22, 23, 88); color: #fff; }
+.d3{ background-color: rgb(163, 255, 250); color: rgb(31, 107, 50); }
+.d4{ background-color: rgb(209, 149, 58); color: #fff; }
+
+
+.photo{
+    height: 100vh;
+    background-size: cover;
+}
+
+.p1{ background-image: url("p1.jpg"); }
+.p2{ background-image: url("p2.jpg"); }
+.p3{ background-image: url("p3.jpg"); }
+.p4{ background-image: url("p4.jpg"); }
