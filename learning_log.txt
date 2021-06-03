@@ -1,3 +1,15 @@
+<27> 3/6/2021 - Toast Notifications
+** CSS **
+> position: fixed
+---- to show thing regardless of scroll
+> align-item: flex-end
+---- to align boxes to the side
+** Javascript **
+> remove DOM element
+---- use ".remove()" on the element variable added into HTML
+
+
+
 <25> 31/5/2021 - navbar
 ** CSS **
 > navbar

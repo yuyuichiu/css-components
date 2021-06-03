@@ -1,0 +1,59 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --txt-color: rgb(180, 122, 55);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 176, 86);
+    font-family: "Poppins", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.btn{
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: var(--txt-color);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.97);
+}
+
+/* Toast container */
+#toasts{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Toast notifications */
+.toast{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 3px 10px;
+    color: var(--txt-color);
+    transition: opacity 0.5s linear;
+}
