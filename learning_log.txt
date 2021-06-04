@@ -7,7 +7,8 @@
 ** Javascript **
 > remove DOM element
 ---- use ".remove()" on the element variable added into HTML
-
+> Seek for parent element
+---- var.parentElement() will return its parent, which can be altered directly
 
 
 <25> 31/5/2021 - navbar

@@ -1,9 +1,6 @@
 /* Import Font from Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
-:root{
-    --txt-color: rgb(180, 122, 55);
-}
 
 *{
     margin: 0;
@@ -54,6 +51,11 @@ body{
     border-radius: 5px;
     margin: 3px;
     padding: 3px 10px;
-    color: var(--txt-color);
     transition: opacity 0.5s linear;
+}
+
+.close{
+    padding-left: 10px;
+    cursor: pointer;
+    color: rgb(223, 223, 223);
 }
