@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profiles</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="git-finder.css">
+</head>
+<body>
+    <!-- Github Profile Finder -->
+    <div class="container">
+        <h1><i class="fab fa-github"></i> Github Profiles Finder</h1>
+        <p>Search a user, check their info and nearest repositories</p>
+        <input type="text" id="search" placeholder="Search by username (e.g. yuyuichiu)" required>
+
+        <div class="result">
+            <!-- Result will be filled by javaScript -->
+        </div>
+    </div>
+
+    <!-- My js file and Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="git-finder.js"></script>
+</body>
+</html>

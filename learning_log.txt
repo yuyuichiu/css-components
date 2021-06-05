@@ -1,3 +1,13 @@
+<28> 5/6/2021 - Github Profile Finder
+** Javascript **
+> API with Axios
+---- axios.get('url') to get api data
+---- The data retrived will be in json format so only need one .then()
+---- quite convenient to use.
+
+---- to use async in axios, use an async function and put "await" in front of axios request.
+
+
 <27> 3/6/2021 - Toast Notifications
 ** CSS **
 > position: fixed

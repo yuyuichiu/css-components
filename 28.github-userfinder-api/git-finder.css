@@ -1,0 +1,149 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background-color: rgb(212, 212, 212);
+    color: #333;
+}
+
+body{
+    background-color: #444;
+    font-family: "Poppins", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    width: 75vw;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > h1{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.container > p{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+#search{
+    width: 90%;
+    height: 50px;
+    font-family: inherit;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 3px solid #ccc;
+    border-radius: 3px;
+}
+
+.result{
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    display: flex;
+}
+
+.result.active{
+    padding: 40px 30px;
+}
+
+/* Profile Search Result Area */
+#avator{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px darkblue solid;
+    margin-right: 15px;
+}
+
+#name{
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#bio{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+#status{
+    display: flex;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+#status > *{
+    margin: 0 20px 0 0;
+    margin-bottom: 6px;
+}
+
+#repo-list > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin: 5px 10px 0 0;
+    background-color: rgb(44, 109, 228);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+#repo-list > a:hover{
+    background-color: rgb(88, 140, 238);
+}
+
+#repo-list > p{
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Error message styles */
+.no-repo{
+    margin: 5px 0;
+    font-style: normal;
+    color: rgb(160, 160, 160);
+}
+
+.error{
+    font-weight: 400;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .container{
+        width: auto;
+        overflow: auto;
+    }
+
+    .container > h1{
+        font-size: 24px;
+    }
+
+    .container > p{
+        font-size: 12px;
+    }
+
+    .result.active{
+        padding: 20px 3px;
+    }
+}
