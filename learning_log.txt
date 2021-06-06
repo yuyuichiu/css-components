@@ -1,3 +1,13 @@
+<29> 6/6/2021 - Client-side like system & double click heart effect
+** CSS **
+> Click through => pointer-effect: none
+> No selection => user-select: none
+
+** Javascript **
+> Use call(), apply() or bind() to redirect the "this" keyword
+
+
+
 <28> 5/6/2021 - Github Profile Finder
 ** Javascript **
 > API with Axios
