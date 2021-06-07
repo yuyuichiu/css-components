@@ -1,6 +1,13 @@
 <30> 7/6/2021 - Textwriter effect
+Font: Monospace means every character has the same width.
+
 ** CSS **
 > Specify animation steps in total => steps(n)
+
+By default, animation does not edit property after finish.
+> To retain animation properties after finish, use "forwards" in animation property
+> To loop animation indefinitely, use "infinite" instead
+
 ** Javascript **
 > split(), map(), join()
 > remember to turn spaces to "%nbsp;" if you need that space
