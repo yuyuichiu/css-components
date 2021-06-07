@@ -1,3 +1,12 @@
+<30> 7/6/2021 - Textwriter effect
+** CSS **
+> Specify animation steps in total => steps(n)
+** Javascript **
+> split(), map(), join()
+> remember to turn spaces to "%nbsp;" if you need that space
+
+
+
 <29> 6/6/2021 - Client-side like system & double click heart effect
 ** CSS **
 > Click through => pointer-effect: none
