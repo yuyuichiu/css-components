@@ -1,0 +1,169 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --form-width: 350px;
+    --form-height: 400px;
+    --text-color: rgb(139, 0, 116);
+}
+
+::selection{
+    background:rgb(255, 195, 230)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right bottom, #d86afe, #f16ae2, #fe70ca, #ff7cb6, #ff8aa8, #ff8dab, #ff91af, #ff94b2, #f78fc5, #e78ed9, #cd90ed, #a696ff);
+    font-family: "Poppins", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden;
+}
+
+.shape{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    transform: rotate(0deg) translate(-70%, -80%);
+    transform-origin: -25% -30%;
+    z-index: -1;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg) translate(-70%, -80%);
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pw-form{
+    position: relative;
+    width: var(--form-width);
+    height: var(--form-height);
+    background-color: rgb(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.pw-form > h1{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 5px;
+}
+
+.pw-out{
+    position: relative;
+    width: 90%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pw-out > #password{
+    height: 40px;
+    font-size: 17px;
+    width: 100%;
+    background: rgb(226, 0, 132);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: inherit;
+}
+
+.pw-out > .copy{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(249, 188, 255);
+    cursor: pointer;
+}
+
+.tooltip{
+    position: absolute;
+    right: -15px;
+    width: 70px;
+    height: 24px;
+    top: -35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(85, 85, 85, 0.6);
+    color: #fff;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid rgba(85, 85, 85, 0.6);
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.copy > i{
+    font-size: 20px;
+    color: rgb(133, 0, 77);
+}
+
+/* The configurations */
+.options{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.options > [type="checkbox"] { /* checkboxes */
+    width: 18px;
+    height: 18px;
+    background:rgb(133, 0, 77)
+}
+
+#pw-length{
+    width: 50px;
+    font-family: inherit;
+}
+
+#generate{
+    padding: 8px;
+    width: 90%;
+    margin: 20px;
+    background: inherit;
+    border: 2px solid rgb(139, 0, 116);
+    color: rgb(139, 0, 116);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#generate:active{
+    transform: scale(0.97);
+}

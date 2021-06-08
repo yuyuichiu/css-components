@@ -1,3 +1,30 @@
+<31> 8/6/2021 - Password Generator
+** CSS **
+> Glassmorphism
+-- Transparency also burs object behind, forms a glossy glass effect
+-- backdrop-filter: (7px);  (also -webkit-backdrop-filter)
+
+> Attribute Selector in CSS
+---- [attr:"val"]    (e.g. checkboxes => [type="checkboxes"])
+
+
+** JavaScript **
+> Checkbox status
+---- _.checked (true / false)
+
+> Trick to create alphabet lists easier
+---- "abcdefghijklmnopqrstuvwxyz".split("");
+
+> Add arrays together
+---- arr1.concat(arr2) < does not directly affect arr1, need variable assignment >
+
+> Copy input text to clipboard
+---- 1) select text
+---- 2) document.execCommand('copy')
+---- 3) design some way to remind user of the copy (tooltip or alert)
+
+
+
 <30> 7/6/2021 - Textwriter effect
 Font: Monospace means every character has the same width.
 

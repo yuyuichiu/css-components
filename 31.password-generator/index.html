@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" href="shape.svg">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="pw.css">
+</head>
+<body>
+    <!-- Expand ideas: first letter upper, hide/show pw, , zero and O, symbol expression / customization -->
+
+    <div class="container">
+        <div class="pw-form" id="pw">
+            <h1>Password Generator</h1>
+            <div class="pw-out">
+                <input type="text" id="password">
+                <div class="copy" id="copy"><i class="far fa-clipboard"></i></div>
+            </div>
+
+            <div class="options">
+                <label for="">Password Length</label>
+                <input type="number" id="pw-length" value="12">
+            </div>
+
+            <div class="options">
+                <label for="">Include lowercase letters</label>
+                <input type="checkbox" id="pw-lower" checked="True">
+            </div>
+
+            <div class="options">
+                <label for="">Include uppercase letters</label>
+                <input type="checkbox" id="pw-upper" checked="True">
+            </div>
+
+            <div class="options">
+                <label for="">Include numbers</label>
+                <input type="checkbox" id="pw-number">
+            </div>
+
+            <div class="options">
+                <label for="">Include symbols</label>
+                <input type="checkbox" id="pw-symbol">
+            </div>
+
+            <button id="generate">Generate Password</button>
+        </div>
+        <img class="shape" src="shape.svg" alt="">
+    </div>
+
+    <script src="pw.js"></script>
+</body>
+</html>
