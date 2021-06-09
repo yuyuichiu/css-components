@@ -1,0 +1,98 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --inactive-toggle-color: #eee;
+    --active-toggle-color: rgb(255, 230, 0);
+    --ball-color: #fff;
+    --toggle-width: 75px;
+    --toggle-height: 40px;
+    /* Travel distance = width - height */
+    --ball-travel-distance: 35px;
+}
+
+body{
+    font-family: "Roboto", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Copy the following along with variables */
+.toggle-container{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    width: 150px;
+}
+
+.toggle-container > .toggle{
+    position: absolute;
+    opacity: 0;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+}
+
+.toggle-container > .label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: var(--toggle-width);
+    height: var(--toggle-height);
+    border-radius: 50px;
+    background-color: var(--inactive-toggle-color);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.toggle-container > .toggle:checked ~ .label{
+    background-color: var(--active-toggle-color);
+}
+
+.toggle-container > .label > .ball{
+    position: absolute;
+    width: calc(var(--toggle-height) - 6px);
+    height: calc(var(--toggle-height) - 6px);
+    left: 3px;
+    border-radius: 50%;
+    background-color: var(--ball-color);
+    animation: slideOff 0.2s forwards;
+}
+
+@keyframes slideOff{
+    0%{
+        transform: translate(var(--ball-travel-distance)) scale(1);
+    }
+    50%{
+        transform: translate(calc(var(--ball-travel-distance) / 2)) scale(1.3);
+    }
+    100%{
+        transform: translate(0px) scale(1);
+    }
+}
+
+@keyframes slideOn {
+    0%{
+        transform: translate(0px) scale(1);
+    }
+    50%{
+        transform: translate(calc(var(--ball-travel-distance) / 2)) scale(1.3);
+    }
+    100%{
+        transform: translate(var(--ball-travel-distance)) scale(1);
+    }    
+}
+
+.toggle-container > .toggle:checked ~ .label > .ball{
+    animation: slideOn 0.2s forwards;
+}
+/* End of toggle components needed to copy */

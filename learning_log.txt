@@ -1,3 +1,15 @@
+<32> 9/6/2021 - Toggle button that looks like those in iPhones
+** CSS **
+> To customize a checkbox, hide the input box and style the label instead
+---- make sure they have the same size, the input will receive clicks and the label's job is to look good
+
+> Active status of checkbox can be viewed through ":checked"
+
+** Javascript **
+> For events, e.target.id can extract the id of the clicked element
+
+
+
 <31> 8/6/2021 - Password Generator
 ** CSS **
 > Glassmorphism

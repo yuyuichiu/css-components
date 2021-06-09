@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Checkboxes</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="toggle.css">
+</head>
+<body>
+    <h2>How do you want your project to be?</h2>
+    <div class="toggle-container">
+        <input type="checkbox" id="good" class="toggle" checked="True">
+        <label for="good" class="label active">
+            <div class="ball"></div>
+        </label>
+        <span>Good</span>
+    </div>
+
+    <div class="toggle-container">
+        <input type="checkbox" id="cheap" class="toggle">
+        <label for="cheap" class="label">
+            <div class="ball"></div>
+        </label>
+        <span>Cheap</span>
+    </div>
+
+    <div class="toggle-container">
+        <input type="checkbox" id="fast" class="toggle">
+        <label for="fast" class="label">
+            <div class="ball"></div>
+        </label>
+        <span>Fast</span>
+    </div>
+
+    <p style="font-size: 12px;">These toggles are customizable by simply adjusting css variables (size & color among with animation)</p>
+
+    <script src="toggle.js"></script>
+</body>
+</html>
