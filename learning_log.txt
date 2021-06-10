@@ -1,3 +1,24 @@
+<33> 10/6/2021 - Notes App with localStorage
+** Javascript **
+> CDN module: marked
+---- enable formatting through symbols, similar to README in Github
+---- element.innerHTML = marked(text)
+
+> localStorage
+Local storage is a storage that stores data inside browser
+It allow user to retrieve web data from last visit
+---- Store Data: localStorage.setItem(key,value)
+---- Get data: localStorage.getItem(key)
+<< If need to store as Array/Object, use JSON.stringify & .parse >> 
+    e.g. localStorage.setItem(key, JSON.stringify(value))
+    eg2. JSON.parse(localStorage.getItem(key))
+
+---- clear storage data by "clear()" OR "removeItem(key)"
+
+(to-do: double click go into edit mode, click outside to get out)
+
+
+
 <32> 9/6/2021 - Toggle button that looks like those in iPhones
 ** CSS **
 > To customize a checkbox, hide the input box and style the label instead
