@@ -6,10 +6,11 @@ addBtn.addEventListener('click', () => { addNewNote() });
 
 // Initialize the page based on localStorage
 let savedData = JSON.parse(localStorage.getItem("notes"));
-if(savedData){
+if(savedData && savedData.length !== 0){
     savedData.forEach((noteContent) => { addNewNote(noteContent, false) });
+} else {
+    addNewNote(`# Markups!\n\n- Markups can be applied\n- so you can format your notes\n- easily\n\nhttps://marked.js.org/`,false)
 }
-
 
 
 function addNewNote(text = "", editMode = true){
@@ -36,17 +37,15 @@ function addNewNote(text = "", editMode = true){
     showcase.innerHTML = marked(text);  // marked = enable marked.js format
     textArea.value = text;
 
-    // Edit functionality -- toggle between edit and display
-    editBtn.addEventListener('click', () => {
+    // Edit functionality -- toggle edit mode & initial settings
+    let toggleEdit = function(){
         showcase.classList.toggle('hidden');
         textArea.classList.toggle('hidden');
-    })
-    
-    // Initial mode settings
-    if(!editMode){
-        showcase.classList.toggle('hidden');
-        textArea.classList.toggle('hidden');
-    }
+    };
+
+    editBtn.addEventListener('click', () => { toggleEdit() });
+    note.addEventListener('dblclick', () => { toggleEdit() });
+    if(!editMode){ toggleEdit() }
 
     // The delete functionality
     deleteBtn.addEventListener('click', () => {
@@ -62,7 +61,7 @@ function addNewNote(text = "", editMode = true){
         showcase.innerHTML = marked(value);
     })
 
-    // Add to the DOM
+    // Put note to the DOM
     noteContainer.appendChild(note);
 }
 
