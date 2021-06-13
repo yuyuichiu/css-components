@@ -1,3 +1,15 @@
+<35> 13/6/2021 - Image Carousel
+** CSS **
+> The cover for <img>  --  object-fit: cover;
+---- use it on a image with size defined by CSS to fit image inside it
+(similar how "background-size: cover;" works, but it applies to images)
+
+> Structure element inside a flex box, and make it hide overflow
+---- then "scroll" individual element by playing with its translateX();
+
+<34> 12/6/2021 - Animated Countdown
+
+
 <33> 10/6/2021 - Notes App with localStorage
 ** Javascript **
 > CDN module: marked

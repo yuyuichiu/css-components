@@ -1,0 +1,63 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(254, 255, 210);
+    font-family: "Poppins", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carousel{
+    width: 500px;
+    height: 535px;
+    overflow: hidden;
+}
+
+.gallery{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    transform: translateX(0px);
+    transition: transform 0.5s linear;
+}
+
+.gallery img{
+    width: 500px;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.toolbox{
+    width: 500px;
+    height: 35px;
+    display: flex;
+}
+
+.toolbox *{
+    flex: 1;
+    padding: 3px 5px;
+    background-color: rgb(253, 227, 141);
+    border: 2px solid rgb(202, 169, 58);
+    color:rgb(95, 110, 6);
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toolbox .prev{
+    margin-right: 5px;
+}
+
+.toolbox .next{
+    margin-left: 5px;
+}
