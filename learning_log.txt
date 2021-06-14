@@ -1,3 +1,18 @@
+<36> 14/6/2021 - Hoverboard
+** CSS **
+> Grid layout
+---- Instead of tables, you just need to use max-width & flex-wrap: wrap
+
+** JS **
+> eventListener to detect hover: mouseenter & mouseleave
+
+> Random number Interval (inclusive)
+---- (min,max) => Math.floor(Math.random() * (max - min) + 1) + min;
+How it work? 
+=> it has minimum fixed amount, then add offset random number into it
+
+
+
 <35> 13/6/2021 - Image Carousel
 ** CSS **
 > The cover for <img>  --  object-fit: cover;
