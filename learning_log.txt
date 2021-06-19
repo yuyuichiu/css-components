@@ -1,4 +1,4 @@
-<36> 14/6/2021 - Hoverboard
+<36> 14/6/2021 - Hoverboard.
 ** CSS **
 > Grid layout
 ---- Instead of tables, you just need to use max-width & flex-wrap: wrap
