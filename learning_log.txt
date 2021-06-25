@@ -1,3 +1,31 @@
+<37> 25/6/2021 - xmlhttprequest
+** js **
+> xmlhttprequest is similar to fetch(), except it's older
+---- Syntax:
+    // XML request in 4 steps
+    let request = new XMLHttpRequest();
+    let url = "https://randomuser.me/api";
+    
+    request.responseType = 'json';
+
+    request.open("GET", url);
+
+    request.send(null);
+
+    request.onload = () => {
+        console.log(request.response)
+        updatePersonInfo(request.response)
+        request.abort();
+    }
+
+> You can also specify config with fetch api too
+---- fetch(url , {method: 'GET'} )
+(there is something called mode: 'no-cors', but that only make thing worse)
+(If need to bypass CORS, the only front end way is to use a proxy service)
+
+
+
+
 <36> 14/6/2021 - Hoverboard.
 ** CSS **
 > Grid layout

@@ -63,3 +63,9 @@ body{
 #getperson:active{
     transform: scale(0.97);
 }
+
+#getperson:disabled{
+    cursor:default;
+    background-color: rgb(109, 145, 192);
+
+}
