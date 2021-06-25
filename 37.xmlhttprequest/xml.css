@@ -1,0 +1,65 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(101, 168, 255);
+    font-family: "", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.person{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.name{
+    font-size: 28px;
+}
+
+.email{
+    font-size: 20px;
+}
+
+#getperson{
+    padding: 10px;
+    margin: 10px 5px 5px 5px;
+    border: rgb(170, 207, 255) 3px solid;
+    border-radius: 5px;
+    background-color: rgb(93, 163, 255);
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#getperson:hover{
+    background-color: rgb(56, 139, 248);
+}
+
+#getperson:active{
+    transform: scale(0.97);
+}
