@@ -1,0 +1,88 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(214, 250, 255);
+    font-family: "Roboto", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.phone-container{
+    width: 300px;
+    height: 500px;
+    border: 4px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.screen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #eee;
+}
+
+.content{
+    width: 292px;
+    min-height: 442px;
+}
+
+.img{
+    position: absolute;
+    opacity: 0;
+    width: 292px;
+    height: 442px;
+    object-fit: cover;
+    transition: opacity ease 0.5s;
+}
+
+.img.show{
+    opacity: 1;
+}
+
+.navbar-bottom{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    height: 100%;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #555;
+}
+
+.nav-item.active{
+    color: rgb(30, 123, 199);
+}
+
+.nav-item i{
+    font-size: 18px;
+}
+
+.nav-item small{
+    margin-top: 3px;
+}

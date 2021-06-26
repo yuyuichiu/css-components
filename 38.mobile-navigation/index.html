@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom App Bar</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="app-bottom-bar.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="screen">
+            <div class="content">
+                <img class="img show" src="../asset/stock1.jpg" data-content="home">
+                <img class="img" src="../asset/stock4.jpg" data-content="aboutUs">
+                <img class="img" src="../asset/stock3.jpg" data-content="people">
+                <img class="img" src="../asset/stock2.jpg" data-content="settings">
+            </div>
+
+            <div class="navbar-bottom">
+                <div class="nav-item active" data-content="home">
+                    <i class="fas fa-home"></i>
+                    <small>Home</small>
+                </div>
+                
+                <div class="nav-item" data-content="aboutUs">
+                    <i class="fas fa-user-tie"></i>
+                    <small>About Us</small>
+                </div>
+                
+                <div class="nav-item" data-content="people">
+                    <i class="fas fa-user-friends"></i>
+                    <small>People</small>
+                </div>
+
+                <div class="nav-item" data-content="settings">
+                    <i class="fas fa-users-cog"></i>
+                    <small>Settings</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app-bottom-bar.js"></script>
+</body>
+</html>

@@ -1,3 +1,13 @@
+<38> 26/6/2021 - App bottom bar
+** CSS **
+> If you need transition effect for switching things, they need to have same position
+-- so make them have absolute position and put them together
+-- control what shows up by changing the opacity with active class
+
+> pair space-between with margin to align buttons 
+> set min width for nav buttons to unify their size dynamically
+
+
 <37> 25/6/2021 - xmlhttprequest
 ** js **
 > xmlhttprequest is similar to fetch(), except it's older
