@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Detector</title>
+    <link rel="icon" type="image/png" href="../asset/favicon.ico">
+    <!-- Font Awesome 5 & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="pw.css">
+</head>
+<body>
+    <form class='login'>
+        <h1>Login</h1>
+        <p>Type the password to check its security level</p>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type='text' id='email' placeholder="Enter email">
+
+        <label for="email">Password:</label>
+        <input type='password' id='pw' placeholder="Your password">
+
+        <div class="row">
+            <div class="pw-strength">
+                <div id="weak" class="weak"></div>
+                <div class="medium-container">
+                    <div id="medium" class="medium"></div>
+                </div>
+                <div class="strong-container">
+                    <div id="strong" class="strong"></div>
+                </div>
+                <div id="pwlevel">-</div>
+            </div>
+        </div>
+
+        <small>Strong password must have 12+ characters, with CapitaL letter and number</small>
+    </form>
+
+
+    <script src="pw.js"></script>
+</body>
+</html>

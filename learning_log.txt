@@ -1,3 +1,19 @@
+<39> 27/6/2021 - Password Strength Checker
+** CSS **
+> Triangle and based-Trapezoid
+-- My method: make a border on a square and hide half of it
+-- alternative: add a ::before or rotate a actual trapezoid (?)
+
+** RegeX **
+> "AND" logic in regex by chaining positive lookaheads
+-- Example: (?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])\w{12,}
+-- each lookaheads are checking this pattern: [(any) with (condition)]
+when condition is not met, the result will retuen false
+when condition is met, it looks for the next lookaheads
+so the main string can be any character paired with a length (.*{12,})
+
+
+
 <38> 26/6/2021 - App bottom bar
 ** CSS **
 > If you need transition effect for switching things, they need to have same position
