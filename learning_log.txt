@@ -1,3 +1,15 @@
+<40> 28/6/2021 - image in boxes
+** CSS **
+> skew to create parallelogram
+-- It helps to create a shape that can put under square to create an illusion of a box
+> image segment effect
+-- The trick is to keep the bg size, and change the background color
+
+** JS **
+> use double for loop if you have a pattern that resets after every n-th item
+(e.g. table x and y positioning)
+
+
 <39> 27/6/2021 - Password Strength Checker
 ** CSS **
 > Triangle and based-Trapezoid
