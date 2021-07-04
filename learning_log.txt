@@ -1,3 +1,13 @@
+<42> 4/7/2021 - live user filter
+** Javascript **
+> includes()
+    Check if string includes another string
+
+> async with fetch()
+    Process the fetch with .then(res => res.json())
+    The result can be then used in the variable
+
+
 <40> 28/6/2021 - image in boxes
 ** CSS **
 > skew to create parallelogram
