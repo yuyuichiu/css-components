@@ -1,0 +1,100 @@
+/* Import Font from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: khaki;
+    font-family: "Muli", "Calibri", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.panel-container {
+    width: 80vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 252, 233);
+}
+
+.panel-container.hide {
+    display: none;
+}
+
+.panel-container strong{
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.row{
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating{
+    padding: 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.rating.selected {
+    background-color: rgb(255, 239, 167);
+}
+
+.rating small{
+    margin: 3px;
+    font-size: 16px;
+}
+
+.emoji{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.send{
+    margin-bottom: 15px;
+    padding: 12px;
+    font-family: inherit;
+    background-color: #ffe499;
+    border: 3px solid #ffd04e;
+    color: rgb(146, 101, 18);
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #ffd04e;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.send:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.received-container {
+    padding: 20px;
+    background-color: rgb(255, 252, 233);
+    text-align: center;
+}
+
+.received-container.hide{
+    display: none;
+}
